@@ -11,17 +11,13 @@ class Game:
 
   def get_word_category(self):
     c_categories = list(programming_words.keys())
-    c_category_idx = random.randrange(len(c_categories))
-
-    c_category_name = c_categories[c_category_idx]
+    c_category_name = random.choice(c_categories)
 
     return c_category_name
 
   def get_keyword(self, category_name):
     c_category_words = programming_words.get(category_name)
-
-    c_word_in_category_idx = random.randrange(len(c_category_words))
-    c_keyword = c_category_words[c_word_in_category_idx].upper()
+    c_keyword = random.choice(c_category_words).upper()
 
     return c_keyword
 
