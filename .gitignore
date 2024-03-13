@@ -1,2 +1,5 @@
 requirements.md
 __pycache__
+
+# MacOS
+.DS_Store
